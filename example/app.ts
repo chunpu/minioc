@@ -1,5 +1,4 @@
 import Logger from './interfaces/logger'
-import Console from './console'
 
 class App {
   logger: Logger
@@ -13,8 +12,4 @@ class App {
   }
 }
 
-const app = new App({
-  logger: new Console(),
-})
-
-app.log('hello')
+export default App
